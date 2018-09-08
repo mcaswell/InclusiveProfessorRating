@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessorViewComponent implements OnInit {
 
+  //professors: Professor[];
   constructor() { }
 
   ngOnInit() {

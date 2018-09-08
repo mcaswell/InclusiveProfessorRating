@@ -12,6 +12,9 @@ import { FlagComponent } from './flag/flag.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomePageComponent } from './static-pages/welcome-page/welcome-page.component';
 import { AboutPageComponent } from './static-pages/about-page/about-page.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DatabaseService } from './services/database.service';
+import { FakeDatabaseService } from './services/fake-database.service';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,11 @@ import { AboutPageComponent } from './static-pages/about-page/about-page.compone
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: DatabaseService,
+      useClass: FakeDatabaseService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

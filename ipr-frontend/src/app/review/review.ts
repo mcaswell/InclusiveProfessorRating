@@ -1,48 +1,48 @@
 import {Serialize, SerializeProperty, Serializable} from 'ts-serializer';
 
-@Serialize({})
-export class Review extends Serializable {
-  @SerializeProperty({
+//@Serialize({})
+export class Review /*extends Serializable*/ {
+  /*@SerializeProperty({
         map: '_id'
-    })
+    })*/
   public id: number;
-  @SerializeProperty({
+  /*@SerializeProperty({
         map: 'professor_id'
-    })
+    })*/
   public professorId: number;
-  @SerializeProperty({})
+  //@SerializeProperty({})
   public text: string;
-  @SerializeProperty({
+  /*@SerializeProperty({
         map: 'accom_rating'
-    })
+    })*/
   public accomRating: number;
-    @SerializeProperty({
+    /*@SerializeProperty({
         map: 'inclusive_rating'
-    })
+    })*/
   public inclusiveRating: number;
-    @SerializeProperty({
+    /*@SerializeProperty({
         map: 'quality_rating'
-    })
+    })*/
   public qualityRating: number;
 
-  @SerializeProperty({
+  /*@SerializeProperty({
     map: 'red_flags'
-  })
+  })*/
   public redFlags: number[];
 
-  @SerializeProperty({
+  /*@SerializeProperty({
     map: 'green_flags'
-  })
+  })*/
   public greenFlags: number[];
 
-  @SerializeProperty({ })
+  //@SerializeProperty({ })
   public upvotes: number;
 
-  @SerializeProperty({})
+  //@SerializeProperty({})
   public downvotes: number;
 
-  @SerializeProperty({
+  /*@SerializeProperty({
       map: 'course_taken'
-  })
+  })*/
   public courseTaken: string;
 }

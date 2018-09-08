@@ -1,16 +1,16 @@
 import {Serialize, SerializeProperty, Serializable} from 'ts-serializer';
 
-@Serialize({})
-export class University extends Serializable{
-@SerializeProperty({
-        map: '_id'
-    })
+//@Serialize({})
+export class University /*extends Serializable*/{
+/*@SerializeProperty({
+        map: 'num_id'
+    }))*/
   public id: number;
 
-  @SerializeProperty({ })
+  //@SerializeProperty({ })
   public name: string;
-  
-  @SerializeProperty({ })
+
+  //@SerializeProperty({ })
   public location: string;
   
 }
