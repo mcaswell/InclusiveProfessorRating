@@ -19,7 +19,7 @@ import { AboutPageComponent } from './static-pages/about-page/about-page.compone
     ReviewComponent,
     ProfessorViewComponent,
     ProfessorListComponent,
-    Universi tyViewComponent,
+    UniversityViewComponent,
     FlagListComponent,
     FlagComponent,
     NavbarComponent,
