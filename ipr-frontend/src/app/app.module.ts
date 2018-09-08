@@ -7,6 +7,8 @@ import { ReviewComponent } from './review/review.component';
 import { ProfessorViewComponent } from './professor/professor-view/professor-view.component';
 import { ProfessorListComponent } from './professor/professor-list/professor-list.component';
 import { UniversityViewComponent } from './university/university-view/university-view.component';
+import { FlagListComponent } from './flag-list/flag-list.component';
+import { FlagComponent } from './flag/flag.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { UniversityViewComponent } from './university/university-view/university
     ReviewComponent,
     ProfessorViewComponent,
     ProfessorListComponent,
-    UniversityViewComponent
+    UniversityViewComponent,
+    FlagListComponent,
+    FlagComponent
   ],
   imports: [
     BrowserModule,
