@@ -10,7 +10,8 @@ import { UniversityViewComponent } from './university/university-view/university
 import { FlagListComponent } from './flag/flag-list/flag-list.component';
 import { FlagComponent } from './flag/flag.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { WelcomePageComponent } from './static-pages/welcome-page/welcome-page.component';
+import { AboutPageComponent } from './static-pages/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     ReviewComponent,
     ProfessorViewComponent,
     ProfessorListComponent,
-    UniversityViewComponent,
+    Universi tyViewComponent,
     FlagListComponent,
     FlagComponent,
     NavbarComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
