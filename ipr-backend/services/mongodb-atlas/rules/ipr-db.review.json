@@ -1,0 +1,43 @@
+{
+    "id": "5b934c1a3dcb8bec0bd90c5d",
+    "database": "ipr-db",
+    "collection": "review",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "write": true,
+            "insert": true,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "professor_id": {
+                "bsonType": "objectId"
+            },
+            "text": {
+                "bsonType": "string"
+            },
+            "accom_rating": {
+                "bsonType": "int"
+            },
+            "inclusive_rating": {
+                "bsonType": "int"
+            },
+            "quality_rating": {
+                "bsonType": "int"
+            },
+            "red_flags": {
+                "bsonType": "array"
+            },
+            "green_flags": {
+                "bsonType": "array"
+            }
+        }
+    }
+}

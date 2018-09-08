@@ -1,0 +1,36 @@
+{
+    "id": "5b933d4c13c806e49a6627d3",
+    "database": "ipr-db",
+    "collection": "university",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "read": true,
+            "insert": true,
+            "delete": false,
+            "additional_fields": {}
+        },
+        {
+            "name": "sysadmin",
+            "apply_when": {},
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "location": {
+                "bsonType": "string"
+            }
+        }
+    }
+}

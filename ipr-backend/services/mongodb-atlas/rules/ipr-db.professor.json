@@ -1,0 +1,28 @@
+{
+    "id": "5b9340b1fdc728e357964e90",
+    "database": "ipr-db",
+    "collection": "professor",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+	    "read": true,
+            "insert": true,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "department_id": {
+                "bsonType": "objectId"
+            },
+            "reviews": {
+                "bsonType": "array"
+            }
+        }
+    }
+}
