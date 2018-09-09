@@ -14,4 +14,7 @@ export class Professor /*extends Serializable*/ {
   public universityId: number;
 
   public name: string;
+
+  public overallRating: number;
+  public numRatings: number;
 }

@@ -15,12 +15,24 @@ export const DEPARTMENTS: Department[] = [
 ];
 
 export const PROFESSORS: Professor[] = [
-  {id: 0, departmentId: 0, universityId: 0, name: "Robert Tables"},
-  {id: 1, departmentId: 3, universityId: 0, name: "Olivia Benson"},
-  {id: 2, departmentId: 2, universityId: 0, name: "Michael Scott"},
-  {id: 3, departmentId: 1, universityId: 0, name: "Hubert Farnsworth"}
+  {id: 0, departmentId: 0, universityId: 0, name: "Robert Tables", overallRating: 4.20, numRatings: 1},
+  {id: 1, departmentId: 3, universityId: 0, name: "Olivia Benson", overallRating: 4.95, numRatings: 1},
+  {id: 2, departmentId: 2, universityId: 0, name: "Michael Scott", overallRating: 0.69, numRatings: 2},
+  {id: 3, departmentId: 1, universityId: 0, name: "Hubert Farnsworth", overallRating: 3.14, numRatings: 1}
 ];
 
-/*export const REVIEWS: Review[] = [
-  
-];*/
+export const REVIEWS: Review[] = [
+  {id: 0, professorId: 0, text: "Professor Tables is excellent! I do wish he didn't make that off-color joke in class that one time, though.", accomRating:4, inclusiveRating: 4, qualityRating:5,
+  redFlags: [], greenFlags: [], upvotes:0, downvotes: 0, courseTaken: "CSCI4380" },
+  {id: 1, professorId: 1, text: "Professor Benson's extensive experience in the field and her compassion for people make her an outstanding professor. I would definitely take her course again!",
+  accomRating:5, inclusiveRating: 5, qualityRating:5,
+  redFlags: [], greenFlags: [0,1,2,3,4,5,6,7], upvotes:0, downvotes: 0, courseTaken: "CRIM2100"},
+  {id: 2, professorId: 2, text: "I found it impossible to learn in Professor Scott's class due to his overuse of innuendos and stereotypes. He also played multiple cruel 'pranks' on me, which made my anxiety worse throughout the semester.",
+  accomRating:0, inclusiveRating: 0, qualityRating:1, redFlags: [1,2,3,4,5,6,7,8,9,10], greenFlags: [], upvotes:2, downvotes:0, courseTaken: "MGMT2100"
+  },
+  {id: 3, professorId: 2, text: "Professor Scott's diversity in business 'lesson' was a horrible mistake. I still have nightmares about being in his class to this day.",
+  accomRating:1, inclusiveRating: 0, qualityRating:0, redFlags: [1,2,3,5,6,7,8,9,10], greenFlags: [], upvotes:2, downvotes:0, courseTaken: "MGMT2100"
+  },
+  {id: 4, professorId: 3, text: "Good news everyone! Hubert Farnsworth is incredibly brilliant. However, he does seem to enjoy tormenting people in parallel universes a bit too much.", accomRating:4, inclusiveRating: 3, qualityRating:4,
+redFlags: [4], greenFlags: [1,2], upvotes:0, downvotes: 0, courseTaken:"PHYS1200"}
+];

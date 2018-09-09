@@ -9,8 +9,8 @@
   </tr>
   <tr *ngFor="let professor of professors">
     <td>{{professor.name}}</td>
-    <td>Department</td>
-    <td>Overall Rating</td>
-    <td>Number of Ratings</td>
+    <td>{{deptNames[professor.id]}}</td>
+    <td>{{professor.overallRating}}</td>
+    <td>{{professor.numRatings}}</td>
   </tr>
 </table>
